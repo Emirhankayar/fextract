@@ -8,18 +8,8 @@ import pathlib
 import sys
 import time
 import zipfile
-
-try:
-    from fextract.modules.f_ext import FastExt
-    from fextract.modules.f_cmp import FastComp
-except ImportError:
-    try:
-        from f_ext import FastExt
-        from f_cmp import FastComp
-    except ImportError:
-        print("Error: Could not import FastExt and FastComp classes")
-        print("Make sure the source files are in the correct location")
-        sys.exit(1)
+from fextract.modules.f_ext import FastExt
+from fextract.modules.f_cmp import FastComp
 
 def format_size(size_bytes):
     """Convert bytes to human readable format"""
