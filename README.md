@@ -1,11 +1,10 @@
-# fextract
+# fextract 
 
 ## Installation
+> https://pypi.org/project/fextract/1.0.0/
 
 ```bash
-git clone https://github.com/Emirhankayar/fextract
-cd fextract
-pip install .
+pip install fextract
 ```
 ## Usage
 ```
