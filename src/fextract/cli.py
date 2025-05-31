@@ -10,8 +10,8 @@ import time
 import zipfile
 
 try:
-    from src.f_ext import FastExt
-    from src.f_cmp import FastComp
+    from fextract.modules.f_ext import FastExt
+    from fextract.modules.f_cmp import FastComp
 except ImportError:
     try:
         from f_ext import FastExt
