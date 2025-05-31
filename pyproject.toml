@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fextract"
+version = "1.0.0"
+description = "Fast multithreaded file extraction and compression tool"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Emirhan Kayar", email = "emirhan.kayar80@gmail.com"},
+]
+keywords = ["zip", "compression", "extraction", "multithreading", "fast", "archive"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Archiving",
+    "Topic :: System :: Archiving :: Compression",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/emirhankayar/fextract"
+"Bug Reports" = "https://github.com/emirhankayar/fextract/issues"
+"Source" = "https://github.com/emirhankayar/fextract"
+
+[project.scripts]
+fextract = "main:main"
+fext = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
